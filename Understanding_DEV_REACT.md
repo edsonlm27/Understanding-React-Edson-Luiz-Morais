@@ -26,3 +26,9 @@
     - configurar o email
 - git log --oneline
     - mostra no log o histórico de commits
+- git push 
+    - enviar o conteúdo do repositório local para o repositório remoto
+- git pull
+    - atualizar o conteúdo do repositório remoto para o repositório local
+- git clone <link>
+    - efetuar o clone do repositório remoto para o repositório local
