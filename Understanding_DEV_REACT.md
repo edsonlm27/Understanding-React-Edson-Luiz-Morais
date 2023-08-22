@@ -1,13 +1,16 @@
-# ANOTAÇÕES DE AULA DE GIT E GITHUB
+# ANOTAÇÕES DE AULA 
+## CURSO DEV_REACT / ENTRA21-2023
 
-## Autor: Edson Luiz Morais  / Curso Entra21-2023
+## Autor: Edson Luiz Morais
+
+### GIT E GITHUB
 
 - Inicialmente, deve-se ter o Git instalado na máquina.  
 - No Windows Explorer, deve-se ir até o diretório onde ficarão os arquivos do repositório local.
 - Na guia onde consta o caminho do diretório, digitar 'cmd'.
 - Isso fará com que abra o Command do Windows, já ná pasta selecionada, sem a necessidade de navegar até a mesma com comandos de diretório (cd).
 
-### Resumo dos principais comandos do Git:
+#### Resumo dos principais comandos do Git:
 - git --version
     - apresenta a versão instalada do Git.
 - git init
@@ -32,3 +35,81 @@
     - atualizar o conteúdo do repositório remoto para o repositório local
 - git clone <link>
     - efetuar o clone do repositório remoto para o repositório local
+
+
+
+### MARKDOWN
+
+#### Cabeçalhos
+      h1 # ... até  h6 ######  
+
+
+- parágrafos são separados por uma linha em branco
+- quebra de linha, 2 espaços em branco no fim da linha
+
+#### Texto com ênfase
+*itálico* ou _itálico_  
+**negrito** ou __negrito__  
+``````tachado``````  
+´´´tachado´´´  
+
+#### Listas não ordenadas
+- item a
+- item b
+    - sub item b1
+        - sub sub item b1a
+
+#### Listas ordenadas
+2. primeiro item
+2. segundo item
+2. terceiro item
+começa de acordo com o número do primeiro item
+
+#### Lista de tarefas
+- [X] tarefa 1
+- [ ] tarefa 2
+- [X] tarefa 3
+
+#### Link
+[texto do Link1](http://example.com/ "Propriedade title, opcional")  
+<a href="http://example.com/" title ="Propriedade title, opcional" >Texto do link2</a>
+
+#### Imagem
+![Calculadora Windows](/assets/calculadora.png "Foto da Calculadora Win...")
+
+#### Vídeo
+[![Vídeo Markdown - YouTube]](https://youtu.be/vZaldeUg6D0)
+
+#### Trecho de código
+```
+   if var > 0 then 
+        display "Valor positivo"
+   else
+        display "Valor Negativo"
+   and-if 
+```
+
+#### Tabela
+Cod | Nome  | Nota | Aprov 
+--- |:-----:|-----:|----
+1   |Paulo  |6,0   | não
+2   |Joana  |7,3   | sim
+
+
+#### Emoji
+
+##### VSCode
+- Apenas dar copiar e colar emojis da Emojoipedia;
+
+https://emojipedia.org/
+
+🧐
+
+##### GitHub
+- Apenas usar os comandos demonstrados nesta pagina:
+
+https://gist.github.com/rxaviers/7360908
+
+:blush:  
+:smirk:
+
