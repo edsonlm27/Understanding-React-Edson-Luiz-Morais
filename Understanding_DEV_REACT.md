@@ -3,6 +3,9 @@
 
 ## Autor: Edson Luiz Morais
 
+
+
+
 ### GIT E GITHUB
 
 - Inicialmente, deve-se ter o Git instalado na máquina.  
@@ -35,6 +38,7 @@
     - atualizar o conteúdo do repositório remoto para o repositório local
 - git clone <link>
     - efetuar o clone do repositório remoto para o repositório local
+
 
 
 
@@ -113,3 +117,92 @@ https://gist.github.com/rxaviers/7360908
 :blush:  
 :smirk:
 
+
+
+
+## HTML
+- Linguagem de marcação, fazendo uso de várias tags.
+- Atualmente na versão 5.
+- Utilizada em conjunto com CSS e JavaScript.
+- Recomendável seguir uma estrutura básica:
+```
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+  </main>
+  <footer>
+  </footer>
+</body>
+
+</html>
+```
+- Algumas tags podem fazer uso de atributos, obrigatórios e opcionais.
+
+
+
+
+## CSS
+- CSS, ou Cascading Style Sheets, são folhas de estilo em cascata, para formatar a apresentação dos documentos de marcação, layout, animações, efeitos.
+- Atualmente na versão 3.
+- Utilizada em conjunto com HTML e JavaScript.
+- Pode ser aplicado de três maneiras:
+1. 	CSS inline: estilos aplicados diretamente em um elemento HTML, dentro do documento.
+```
+<h1 style="color:blue;text-align:center;">This is a heading</h1>
+<p style="color:red;">Este é um parágrafo.</p>
+```
+
+2. 	CSS Interno/Incorporado: o elemento style permite aplicar várias regras de uma vez no próprio documento HTML
+```
+<head>
+<style>
+body {
+    background-color: green;
+}
+
+h1 {
+    color: brown;
+    margin-left: 40px;
+}
+</style>
+</head>
+```
+
+3. 	CSS Externo: um documento com extensão .css permite aplicar regras a um website inteiro de uma vez.
+```
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+```
+
+- Os estilos cascateados possuem prioridade de cascateamento:
+    * estilo embutido dentro de um elemento html
+    * folhas de estilo internas e externas (na seção principal)
+    * padrão do navegador
+
+- Seletores utilizados para serem aplicados ao html:
+    * simples: universal(*), tag(p), id(#), classe(.)
+    * combinadores: espaço em branco, ">" e "+"
+    * de pseudoclasse:  :active  :focus  :hover
+    * de pseudoelementos:  :first-line   :first-letter
+    * de atributos:  [att~=val]  [att|=val]
+
+**Observação:**
+- Seletores mais específicos se sobrepõem aos menos estpecíficos
+
+- Diversas aplicações do CSS:
+    - Cor
+    - Texto
+    - Fonte
+    - Background
+    - etc
+
+- Display: flex / grid
