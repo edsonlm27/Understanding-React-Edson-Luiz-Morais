@@ -26,9 +26,9 @@
     - para alterar o status de todos os arquivos para 'tracked'.
 - git commit -m "mensagem"
     - para fazer o commit no arquivo e gerar uma nove versão do mesmo; utilizar uma mensagem que traga uma fácil identificação da alteração.
-- git config -global user.name <nome>
+- git config -global user.name (nome)
     - configurar o nome
-- git config -global user.email <email>
+- git config -global user.email (email)
     - configurar o email
 - git log --oneline
     - mostra no log o histórico de commits
@@ -36,7 +36,7 @@
     - enviar o conteúdo do repositório local para o repositório remoto
 - git pull
     - atualizar o conteúdo do repositório remoto para o repositório local
-- git clone <link>
+- git clone (link)
     - efetuar o clone do repositório remoto para o repositório local
 
 
@@ -50,11 +50,12 @@
 
 - parágrafos são separados por uma linha em branco
 - quebra de linha, 2 espaços em branco no fim da linha
+- evitar usar símbolo da tag <a> com conteúdo dentro (não aparece)
 
 #### Texto com ênfase
 *itálico* ou _itálico_  
 **negrito** ou __negrito__  
-``````tachado``````  
+```tachado```  
 ´´´tachado´´´  
 
 #### Listas não ordenadas
@@ -145,6 +146,7 @@ https://gist.github.com/rxaviers/7360908
 </html>
 ```
 - Algumas tags podem fazer uso de atributos, obrigatórios e opcionais.
+- Algumas tags precisam da tag de fechamento </html>, outras não.
 
 
 
@@ -206,3 +208,58 @@ h1 {
     - etc
 
 - Display: flex / grid
+
+
+
+
+## Lógica de Programação
+
+- Técnica de encadear pensamentos para atingir um determinado objetivo, em uma sequência lógica.
+
+### Algoritmo
+- Sequência finita de passos que levam à execução de uma tarefa.
+
+#### Formas de representar um algoritmo
+- descritivo
+- fluxograma	(início, fim)
+- pseudo-código		algoritmo em tópicos	início, fim (com indentação)
+- notação matemática (expressões)
+
+#### Sugestões
+- somente um verbo por frase
+- frases em 3a pessoa (infinitivo)
+- ser objetivo
+- evitar palavras com sentido dúbio
+
+#### Fases do algoritmo
+- entrada de dados
+- processamento
+- saída de dados
+
+
+
+
+## JavaScript (JS)
+
+- JavaScript é uma poderosa linguagem de programação que pode adicionar interatividade a um site. 
+- A linguagem JS é fracamente tipada, e é aplicada juntamente com HTML e CSS.
+- As variáveis JS podem ser declaradas:
+    - automaticamente, onde o tipo é definido por inferência
+    - usando let (escopo local)
+    - usando var (escopo global)
+    - const (valor constante, que não pode ser alterado)
+- OBS: As palavras reservadas não podem ser usadas como nomes de variáveis.
+
+### Operadores Relacionais
+- atribuição (=)
+- igualdade (==)
+- diferente de (!=)
+- menor que (<)
+- menor ou igual (<=)
+- maior que (>)
+- maior ou igual (>=)
+
+### Operações Lógicas
+- and (&&)
+- or (||)
+- not 
