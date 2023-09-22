@@ -132,6 +132,9 @@ https://gist.github.com/rxaviers/7360908
 
 <head>
 
+  <style>
+      (CSS)
+  </style>
 </head>
 
 <body>
@@ -141,6 +144,9 @@ https://gist.github.com/rxaviers/7360908
   </main>
   <footer>
   </footer>
+    <script>
+        (JavaScript)
+    </script>
 </body>
 
 </html>
@@ -174,7 +180,7 @@ h1 {
     color: brown;
     margin-left: 40px;
 }
-</style>
+</>
 </head>
 ```
 
@@ -249,7 +255,15 @@ h1 {
     - usando var (escopo global)
     - const (valor constante, que não pode ser alterado)
 - OBS: As palavras reservadas não podem ser usadas como nomes de variáveis.
+- Utilizar camelCase para nomear as variáveis com mais de uma palavra.
+- Comentários:
+    ```
+    // comentário de linha única
 
+    /*  comentário
+            de várias
+    /*  linhas
+    ```
 ### Operadores Relacionais
 - atribuição (=)
 - igualdade (==)
@@ -263,3 +277,41 @@ h1 {
 - and (&&)
 - or (||)
 - not 
+
+### Tipos de dados (5)
+- string  - 'texto entre aspas simples' ou "aspas duplas" "123"
+- number  -  Sem o uso de aspas   27  34.57 
+- boolean -  true  false 
+- Object 
+- function 
+
+### Tipos especiais de dados (2)
+- null 
+- undefined 
+
+### Tipos de Objetos (6)
+- Object 
+- Date 
+- Array 
+- Number 
+- String 
+- Boolean 
+
+### Operadores para testar tipos de dados 
+- typeOf
+- isNaN (Not a Number)
+
+### Operações Aritméticas
+- soma (+)
+- subtração (-)
+- multiplicação (*)
+- divisão (/)
+- resto da divisão (%)
+- potenciação (**)
+- radiciação (sem símbolo) / usar inverso da potenciação / x = num ** (1/raiz)
+- também temos a biblioteca Math (PI, pow, sqrt, cbrt, random(), ...)
+
+### Bases numéricas
+- hexadecimal (0xf)
+- octal (0o7)
+- binário (0b1)
