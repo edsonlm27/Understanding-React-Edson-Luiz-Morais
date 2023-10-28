@@ -333,5 +333,30 @@ h1 {
 - octal (0o7)
 - binário (0b1)
 
+### Manipulação do DOM  
+  
+#### Capturando Elementos
+  
+- input type="text"  
+texto = document.getElementById("idTexto").value  
+texto2 = document.querySelector("#idTexto").value  
+texto3 = document.querySelectorAll(".inputTexto")  
+  
+- input type="number"  
+numero = Number(document.getElementById("idNumero").value)  
+  
+- input type="checkbox"  
+opcao1 = document.getElementById("idOpcao1").checked // retorna um boolean  
+  
+- input type="radio"  
+masculino = document.getElementById("idMasculino").checked // retorna um boolean  
+capturando o radio selecionado:    
+sexo = document.querySelector("input[name=nmGenero]:checked").value  
+  
+
+
+
+
+
 
 
