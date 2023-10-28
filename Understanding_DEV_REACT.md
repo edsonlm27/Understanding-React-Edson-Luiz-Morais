@@ -104,7 +104,7 @@ Cod | Nome  | Nota | Aprov
 #### Emoji
 
 ##### VSCode
-- Apenas dar copiar e colar emojis da Emojoipedia;
+- Apenas dar copiar e colar emojis da Emojipedia;
 
 https://emojipedia.org/
 
@@ -278,6 +278,10 @@ h1 {
 - or (||)
 - not 
 
+#### Operações lógicas bit-a-bit
+- var num = 9 & 3
+- var num = 9 | 3
+
 ### Tipos de dados (5)
 - string  - 'texto entre aspas simples' ou "aspas duplas" "123"
 - number  -  Sem o uso de aspas   27  34.57 
@@ -311,7 +315,23 @@ h1 {
 - radiciação (sem símbolo) / usar inverso da potenciação / x = num ** (1/raiz)
 - também temos a biblioteca Math (PI, pow, sqrt, cbrt, random(), ...)
 
+#### Notação exponencial
+- var numExponencial = 2e3
+
+#### Biblioteca Math
+- Math.PI
+- Math.pow(5, 6)
+- Math.sqrt(25)
+- Math.cbrt(27)
+- Math.random()
+
+##### Gerando números Pseudo-Aleatórios entre 0 e 10:
+- numRand = parseInt(Math.random() * 10)
+
 ### Bases numéricas
 - hexadecimal (0xf)
 - octal (0o7)
 - binário (0b1)
+
+
+
