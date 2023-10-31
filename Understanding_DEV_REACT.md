@@ -266,8 +266,9 @@ h1 {
     ```
 ### Operadores Relacionais
 - atribuição (=)
-- igualdade (==)
-- diferente de (!=)
+- igualdade (==)  considera o valor, desprezando o tipo  
+- igualdade estrita (===)  considera também o tipo
+- diferente de (!=), (!==)
 - menor que (<)
 - menor ou igual (<=)
 - maior que (>)
@@ -283,15 +284,25 @@ h1 {
 - var num = 9 | 3
 
 ### Tipos de dados (5)
-- string  - 'texto entre aspas simples' ou "aspas duplas" "123"
-- number  -  Sem o uso de aspas   27  34.57 
-- boolean -  true  false 
-- Object 
-- function 
+- string  - 'texto entre aspas simples' ou "aspas duplas" "123"  
+    Existem 3 formas de declarar Strings: Aspas duplas, aspas simples e templateLiterals - 
+    Crases (facilita quebra de linha)
+
+- number  -  Sem o uso de aspas (27) (34.57) / em JS todos os números são number, tanto inteiros quanto decimais  
+    Também são number: +Infinity, -Infinity, NaN (typeof)  
+    Double precision 64-bit binary format IEEE 754 (Acontecem algumas imprecisões de arredondamento)  
+    https://0.30000000000000004.com/  console.log(.1 + .2);  
+    The decimal.js library provides an arbitrary-precision Decimal type for JavaScript
+- boolean -  true ou false 
+- Object - carregam alguns métodos
+- function  
+O JavaScript trata os valores de string vazia, o number 0, undefined, false e null como valores falsos (falsy)  
+Todos os demais valores são tratados como valores verdadeiros (truthy)
+
 
 ### Tipos especiais de dados (2)
-- null 
-- undefined 
+- null  (existe, mas tem uma ausência de valor e não a inexistência de propriedade)  
+- undefined (ausência de declaração, inexistência de definição (ela nem existe))
 
 ### Tipos de Objetos (6)
 - Object 
@@ -304,6 +315,28 @@ h1 {
 ### Operadores para testar tipos de dados 
 - typeOf
 - isNaN (Not a Number)
+  
+### Conversão Explícita no JS 
+#### Para string
+- variavel = String(12345)   
+- x.toFixed(2)  
+- x.toExponential(3)  
+- x.toPrecision(4)  
+
+#### Para number
+- Number('765')  
+- Number(true)  
+- parseFloat("10.5")  
+- parseInt("10.5")  
+  
+#### Para boolean  
+- Forma simples de converter para boolean, negar 2 vezes – o vazio é convertido para false  
+    console.log(!!"")
+    Se preencher, converte para true - console.log(!!"abc")  
+    Se escrever true, é true - console.log(!!"true")  
+    Se escrever false, é true - console.log(!!"false")  
+    Não converte explicitamente, verifica se tem algum valor  
+    Se colocar um espaço (que é um caracter), já considera preenchido
 
 ### Operações Aritméticas
 - soma (+)
@@ -353,6 +386,22 @@ masculino = document.getElementById("idMasculino").checked // retorna um boolean
 capturando o radio selecionado:    
 sexo = document.querySelector("input[name=nmGenero]:checked").value  
   
+### Variáveis  
+- var (permite redeclaração e reatribuição)  
+    (O var "vaza" escopos por conta do hoisting(execeto o escopo de função))  
+    (sempre se mantém no escopo global ou no escopo de função; ele sofre o hoisting até o escopo mais próximo de uma função ou até o escopo mais próximo global que tiver)
+- let (permite somente reatribuição)  
+    (se restringe a qualquer tipo de bloco, seja uma função, um bloco if, um bloco while, for, ...)  
+    (sofre o hoisting até o escopo do bloco, e não até o escopo global)
+- const (não permite redeclaração nem reatribuição)  
+    (se restringe ao escopo de bloco, e deve ser obrigatoriamente inicializada na declaração)
+- hoisting (joga a declaração para cima, mas mantém a atribuição no mesmo lugar)
+
+### Processamento Assíncrono
+  
+- setInterval()  
+- clearInterval()  
+- setTimeout()  
 
 
 
