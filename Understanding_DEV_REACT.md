@@ -398,10 +398,27 @@ sexo = document.querySelector("input[name=nmGenero]:checked").value
 - hoisting (joga a declaração para cima, mas mantém a atribuição no mesmo lugar)
 
 ### Processamento Assíncrono
-  
-- setInterval()  
-- clearInterval()  
+
+- JS: assíncrono, IO não bloqueante, single thread    
+- setInterval() / clearInterval()  
 - setTimeout()  
+  
+### Bootstrap
+
+- site: getbootstrap.com  (oficial)
+- w3schools.com/bootstrap
+
+#### Bootstrap CDN (Content Delivery Network)
+- CSS	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css  
+- JS	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js  
+
+#### Lembretes
+- se configurar CSS próprio, este deve estar abaixo do css do bootstrap (última coisa a ser declarada)  
+- colocar tudo dentro de container (div, section, main, ...)  
+- escolher um container (-sm, -md, -lg, -xl, -xxl, -fluid)  
+- O simples fato de usar um container já o torna responsivo (mobile first) 
+- A ordem das classes do Bootstrap não importa  
+- Algumas classes: text, bg (background colors), border, shadow
 
 
 
