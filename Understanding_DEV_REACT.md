@@ -400,9 +400,33 @@ sexo = document.querySelector("input[name=nmGenero]:checked").value
 ### Processamento Assíncrono
 
 - JS: assíncrono, IO não bloqueante, single thread    
-- setInterval() / clearInterval()  
-- setTimeout()  
-  
+- setInterval() / clearInterval(): set, executa uma determinada tarefa de tempos em tempos
+- setTimeout(): executa uma função (pode ser nomeada ou anônima) após um determinado tempo  
+
+#### AJAX
+- fazer uma requisição https para consumo de API (var xhr = new XMLHttpRequest - construtor)  
+- Métodos:  
+    - xhr.open(), prepara a requisição (passa o método - get, post, put, delete, ...)
+    - xhr.addEventListener / load, escutar o retorno da requisição
+    - xhr.send(), dispara a requisição
+- retorna um json, xml, csv
+- JSON.parse(enderecoJSON) para transformar em JS Object
+- Para transformar um JS Object para JSON, usa-se o JSON.stringify(enderecoOBJ)
+- resposta: xhr.responseText
+- consultar a documentação da API (WebService) / O método depende do servidor (o viacep só aceita GET)
+- O AJAX é uma forma mais antiga de trabalhar
+
+#### async await
+- O fetch API é um método do navegador, faz parte do DOM; não precisa colocar o GET (é o padrão dele);  não retorna a resposta do servidor, e sim uma promise
+    - async function()
+    - await 
+    - return resposta.json()
+- Promise: técnica para trabalhar com processam async; esse objeto espera a resposta do servidor; tem 4 estados, pending + 3
+- Com o await, fica esperando a promise mudar de estado(sair de pending), e pega os dados vindos do servidor
+- Para ficar esperando, precisa do async na function
+- O JSON já extrai o JS Object (o .json também retorna uma promise)
+- Em arrow function, usa async await também.
+
 ### Bootstrap
 
 - site: getbootstrap.com  (oficial)
