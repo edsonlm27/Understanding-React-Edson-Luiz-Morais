@@ -346,7 +346,13 @@ Todos os demais valores são tratados como valores verdadeiros (truthy)
 - resto da divisão (%)
 - potenciação (**)
 - radiciação (sem símbolo) / usar inverso da potenciação / x = num ** (1/raiz)
-- também temos a biblioteca Math (PI, pow, sqrt, cbrt, random(), ...)
+- também temos a biblioteca Math (PI, pow, sqrt, cbrt, random(), ...)  
+- maneiras diferentes de escrever as operações:
+    - a = a + 1 ==> a += 1
+    - x = x * 10 ==> x *= 10
+    - y = y / 2 ==> y /= 2
+    - k = k - 5 ==> k -= 5
+
 
 #### Notação exponencial
 - var numExponencial = 2e3
@@ -416,12 +422,12 @@ sexo = document.querySelector("input[name=nmGenero]:checked").value
 - consultar a documentação da API (WebService) / O método depende do servidor (o viacep só aceita GET)
 - O AJAX é uma forma mais antiga de trabalhar
 
-#### async await
+#### FETCH (async await)
 - O fetch API é um método do navegador, faz parte do DOM; não precisa colocar o GET (é o padrão dele);  não retorna a resposta do servidor, e sim uma promise
     - async function()
     - await 
     - return resposta.json()
-- Promise: técnica para trabalhar com processam async; esse objeto espera a resposta do servidor; tem 4 estados, pending + 3
+- Promise: técnica para trabalhar com processamento assíncrono; esse objeto espera a resposta do servidor; tem 4 estados(pending, fullfilled ou resolved, rejected, settled)
 - Com o await, fica esperando a promise mudar de estado(sair de pending), e pega os dados vindos do servidor
 - Para ficar esperando, precisa do async na function
 - O JSON já extrai o JS Object (o .json também retorna uma promise)
