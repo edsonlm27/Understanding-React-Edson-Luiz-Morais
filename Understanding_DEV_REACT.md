@@ -180,7 +180,7 @@ h1 {
     color: brown;
     margin-left: 40px;
 }
-</>
+</style>
 </head>
 ```
 
@@ -264,6 +264,32 @@ h1 {
             de várias
     /*  linhas
     ```
+- como aplicar o JS:
+1. 	JS Interno/Incorporado: o elemento script permite aplicar JS no próprio documento HTML
+    ```
+    <!DOCTYPE html>
+    <html>
+    <body>
+    <h2>Demo JavaScript in Body</h2>
+    <p id="demo">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+    </script>
+    </body>
+    </html>
+    ```
+
+2. 	arquivo JS Externo: um documento com extensão .js permite aplicar regras a um website inteiro de uma vez.
+    ```
+    <head>
+        <script src="script.js"></script>
+    </head>
+    ```
+ 
+
 ### Operadores Relacionais
 - atribuição (=)
 - igualdade (==)  considera o valor, desprezando o tipo  
@@ -348,10 +374,11 @@ Todos os demais valores são tratados como valores verdadeiros (truthy)
 - radiciação (sem símbolo) / usar inverso da potenciação / x = num ** (1/raiz)
 - também temos a biblioteca Math (PI, pow, sqrt, cbrt, random(), ...)  
 - maneiras diferentes de escrever as operações:
-    - a = a + 1 ==> a += 1
+    - a = a + 1 ==> a += 1 (ou ainda a++)
     - x = x * 10 ==> x *= 10
     - y = y / 2 ==> y /= 2
-    - k = k - 5 ==> k -= 5
+    - k = k - 5 ==> k -= 5 (k--, diminui 1)
+
 
 
 #### Notação exponencial
@@ -372,7 +399,7 @@ Todos os demais valores são tratados como valores verdadeiros (truthy)
 - octal (0o7)
 - binário (0b1)
 
-### Manipulação do DOM  
+### Manipulação do DOM (Document Object Model)  
   
 #### Capturando Elementos
   
@@ -407,9 +434,9 @@ sexo = document.querySelector("input[name=nmGenero]:checked").value
 
 - JS: assíncrono, IO não bloqueante, single thread    
 - setInterval() / clearInterval(): set, executa uma determinada tarefa de tempos em tempos
-- setTimeout(): executa uma função (pode ser nomeada ou anônima) após um determinado tempo  
+- setTimeout() / clearTimeout(): executa uma função (pode ser nomeada ou anônima) após um determinado tempo  
 
-#### AJAX
+#### AJAX (Asynchronous JavaScript and XML)
 - fazer uma requisição https para consumo de API (var xhr = new XMLHttpRequest - construtor)  
 - Métodos:  
     - xhr.open(), prepara a requisição (passa o método - get, post, put, delete, ...)
