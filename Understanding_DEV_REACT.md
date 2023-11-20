@@ -24,6 +24,8 @@
     - para alterar o status do arquivo para 'tracked'.
 - git add .
     - para alterar o status de todos os arquivos para 'tracked'.
+- git restore --staged <file>
+    - para retornar de tracked para unstaged
 - git commit -m "mensagem"
     - para fazer o commit no arquivo e gerar uma nove versão do mesmo; utilizar uma mensagem que traga uma fácil identificação da alteração.
 - git config -global user.name (nome)
@@ -204,7 +206,7 @@ h1 {
     * de atributos:  [att~=val]  [att|=val]
 
 **Observação:**
-- Seletores mais específicos se sobrepõem aos menos estpecíficos
+- Seletores mais específicos se sobrepõem aos menos específicos
 
 - Diversas aplicações do CSS:
     - Cor
@@ -476,6 +478,19 @@ sexo = document.querySelector("input[name=nmGenero]:checked").value
 - O simples fato de usar um container já o torna responsivo (mobile first) 
 - A ordem das classes do Bootstrap não importa  
 - Algumas classes: text, bg (background colors), border, shadow
+
+### JSON (JavaScript Object Notation)
+- formatação utilizada para estruturar dados em formato de texto e transmiti-los de um sistema para outro
+- JSON => JS  
+vem no formato string, para usar no código: json.parse()
+- JS => JSON  
+converter para string: json.stringify()
+- Regras de sintaxe:
+    - Os dados são em pares nome:valor
+    - O nome é uma string, mas o valor pode ser qualquer tipo de dado
+    - Dados são separados por vírgula
+    - Chaves guardam objetos, colchetes guardam arrays
+    - É necessário usar aspas duplas
 
 
 
