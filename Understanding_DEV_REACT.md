@@ -492,9 +492,51 @@ converter para string: json.stringify()
     - Chaves guardam objetos, colchetes guardam arrays
     - É necessário usar aspas duplas
 
+### NODE
+- Modules: require("") / module.exports
+- node server.js
+- nodemon server.js
 
+#### npm (Node Package Manager)
+- express, framework para o Node.js
 
+#### Síntese de Comandos
+- npm -v  
+verificar a versão instalada
+- npm init
+iniciar um projeto Node; cria o arquivo package.json (inserção de variáveis)
+    - npm init -y  
+    inicializa as variáveis com valores default, não solicita preenchimento
+- npm install express --save   
+instala o pacote express; cria o arquivo package-lock json e pasta node_modules
+- npm install nodemon -g  
+instala o nodemon globalmente, e não só no projeto
 
+#### instalar dependências
+- npm i express --save
+- npm i cors
+- npm i body-parser
+
+```
+"dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+```
+
+#### scripts	para startar
+- npm run dev
+- npm run test
+- npm run start
+
+```
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  }
+```
 
 
 
