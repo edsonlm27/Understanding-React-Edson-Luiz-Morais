@@ -538,5 +538,24 @@ instala o nodemon globalmente, e não só no projeto
   }
 ```
 
+### JWT (Json Web Token)
+- é uma dependência externa, precisa ser importada, pelo npm install
+- composto por 3 strings codificadas (cabeçalho, payload e token, com tempo de expiração)
+- SECRET é uma senha que fica gravada no servidor
+- no logout, jogar esse token em uma black-list – um array de tokens inválidos
+- a Black-list deve estar no escopo global do servidor
+- pode testar usando Insomnia, Postman, ...
+
+### Armazenamento no navegador (variáveis - converter para json)
+- json.parse, pegar um json e passar para JS obj
+- json.stringify (converter para json)
+- localStorage
+    - localStorage.setItem("inventor", inventorJSON)
+    - localStorage.getItem("inventor")
+    - localStorage.removeItem("inventor")
+- sessionStorage (sessionStorage funciona da mesma maneira, porém ele existe só enquanto o naveg estiver aberto; fechou o navegador, limpa automaticamente)
+- cookies (tem mais detalhes)
+- Storage e o cookies pode guardar no frontEnd
+
 
 
